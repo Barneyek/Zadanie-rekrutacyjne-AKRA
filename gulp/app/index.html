@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>ePlatforma Archeologiczna</title>
+   <meta name="description" content="ePlatforma archeologiczna">
+   <meta name="keywords" content="eplatform, archeology">
+   <meta name="author" content="Damian Osiecki" />
+   <link rel="shortcut icon" href="favicon.png">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-light fixed-top d-flex flex-row">
+      <div class="navbar-brand-wrapper d-flex text-center align-items-center justify-content-center">
+         <a class="navbar-brand" href="#">
+           <img src="images/logo_eplatforma.png" alt="logo-full">
+         </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+         <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize" tabindex="1">
+            <span class="fas fa-bars"></span>
+        </button>
+         <ul class="navbar-nav navbar-nav-right nav d-flex align-items ">
+            <li class="nav-item">
+               <form class="navbar-nav-search d-flex align-items-center justify-content-center">
+                  <input type="text" class="form-control input-search" placeholder="Search..." aria-label="Search" tabindex="2">
+                  <span class="navbar-nav-search-icon">
+                    <i class="fas fa-search"></i>
+                  </span>
+               </form>
+            </li>
+            <li class="nav-item dropdown" tabindex="3">
+               <!--               FLAAGI POPRAW-->
+               <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false" style=" position: relative;
+            z-index: 5;">
+                 <img src="/images/poland.png" width="22" height="22" alt="Poland flag circle"/>
+               </a>
+               <div class="dropdown-menu dropdown-menu-right navbar-dropdown dropdown-flag dropdown-animation" aria-labelledby="drop-down-flag">
+                  <a class="dropdown-item">
+                    <img src="/images/united-kingdom.png" width="22" height="22"  alt="England flag circle"/>
+                  </a>
+               </div>
+            </li>
+
+            <li class="nav-item dropdown" tabindex="4">
+               <a class="nav-link count-indicator" href="#" data-toggle="dropdown" aria-expanded="false">
+                 <img src="/images/secured-letter.png" width="25" height="25"/>
+                 <span class="count">16</span>
+               </a>
+               <div class="dropdown-menu dropdown-menu-right navbar-dropdown dropdown-animation" aria-labelledby="drop-down-message">
+                  <a class="dropdown-item">
+                     <p class="dropdown-p font-weight-normal float-left">Masz 16 nowych wiadomości</p>
+                     <span class="badge badge-pill badge-primary float-right">Zobacz wszystkie</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item other-profile">
+                     <div class="other-profile-image">
+                        <img src="/images/user.png" class="profile-pic">
+                     </div>
+                     <div class="other-profile-content">
+                        <h6 class="other-profile-subject font-weight-medium">Dawid Nowak
+                           <span class="float-right font-weight-light small-text">5 minut temu</span>
+                        </h6>
+                        <p class="font-weight-light small-text">Nowy produkt już w sprzedaży.</p>
+                     </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item other-profile">
+                     <div class="other-profile-image">
+                        <img src="/images/user.png" class="profile-pic">
+                     </div>
+                     <div class="other-profile-content">
+                        <h6 class="other-profile-subject font-weight-medium">Anna Lipska
+                           <span class="float-right font-weight-light small-text">6 dni temu</span>
+                        </h6>
+                        <p class="font-weight-light small-text">Upcoming meeting!</p>
+                     </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item other-profile">
+                     <div class="other-profile-image">
+                        <img src="/images/user.png" class="profile-pic">
+                     </div>
+                     <div class="other-profile-content">
+                        <h6 class="other-profile-subject font-weight-medium">Ralph Cook
+                           <span class="float-right font-weight-light small-text">1 miesiąc temu</span>
+                        </h6>
+                        <p class="font-weight-light small-text">The meeting is cancelled</p>
+                     </div>
+                  </a>
+               </div>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" tabindex="5">
+                    <img src="/images/user.png" alt="profile-image-thumbnail" class="profile-pic">
+               </a>
+               <div class="dropdown-menu dropdown-menu-right navbar-dropdown dropdown-animation dropdown-own-profile" aria-labelledby="drop-down-profile">
+                  <div class="dropdown-item">
+                     <div class="own-profile-image">
+                        <img src="/images/user.png" class="profile-pic">
+                     </div>
+                     <div class="own-profile-content">
+                        <h6 class="own-profile-email font-weight-bold">Jan Kowalski</h6>
+                        <p class="font-weight-light small-text">jk@gmail.com</p>
+                     </div>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">
+                         <i class="fas fa-cog"></i>
+                         <h6 class="own-profile-menu text-center">Ustawienia</h6>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">
+                         <i class="far fa-eye"></i>
+                         <h6 class="own-profile-menu text-center">Dostępność</h6>
+                 </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">
+                         <i class="fas fa-power-off"></i>
+                         <h6 class="own-profile-menu text-center">Wyloguj</h6>
+                 </a>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <div class="container-fluid page-body-wrapper">
+     
+   </div>
+
+
+   <!--build:js js/main.min.js -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <script src="js/lib/a-library.js"></script>
+   <script src="js/lib/another-library.js"></script>
+   <script src="js/main.js"></script>
+
+   <!-- endbuild -->
+</body>
+
+</html>
