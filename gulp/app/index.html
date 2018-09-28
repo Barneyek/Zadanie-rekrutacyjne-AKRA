@@ -59,7 +59,7 @@
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown dropdown-animation" aria-labelledby="drop-down-message">
             <a class="dropdown-item">
               <p class="dropdown-p font-weight-normal float-left">Masz 16 nowych wiadomości</p>
-              <span class="badge badge-pill badge-primary float-right">Zobacz wszystkie</span>
+              <span class="badge badge-pill badge-main float-right">Zobacz wszystkie</span>
             </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item other-profile">
@@ -201,13 +201,35 @@
       </ul>
     </nav>
 
-    <div class="main-panel d-flex">
+    <div class="main-panel">
       <div class="content-wrapper">
         <div class="page-header">
           <h3 class="page-title">Tytuł Zakładki/Tabeli</h3>
         </div>
+
+        <button type="button" class="btn btn-edit"><i class="fas fa-edit"></i>Edytuj Kolumny</button>
         <div class="card">
           <div class="card-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <label>Pokaż
+                  <select name="order-listing_length float-left" aria-controls="order-listing" class="form-control select-rows">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="-1">Wszystkie</option>
+                  </select>
+                  wierszy</label>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="order-listing_filter float-right">
+                  <label>Filtruj:
+                    <input type="search" class="form-control" placeholder="Search" aria-controls="order-listing">
+                  </label>
+                </div>
+              </div>
+            </div>
+
             <div class="row">
               <div class="col-md-12">
                 <div class="table-responsive">
@@ -241,8 +263,8 @@
                         <td>AZPCity1</td>
                         <td>AZP1</td>
                         <td>
-                          <label class="badge badge-primary badge-pill">Zobacz</label>
-                          <label class="badge badge-danger badge-pill">Mapa</label>
+                          <label class="badge badge-main badge-pill">Zobacz</label>
+                          <label class="badge badge-map badge-pill">Mapa</label>
                         </td>
                       </tr>
                       <tr>
@@ -256,8 +278,8 @@
                         <td>AZPCity2</td>
                         <td>AZP2</td>
                         <td>
-                          <label class="badge badge-primary badge-pill">Zobacz</label>
-                          <label class="badge badge-danger badge-pill">Mapa</label>
+                          <label class="badge badge-main badge-pill">Zobacz</label>
+                          <label class="badge badge-map badge-pill">Mapa</label>
                         </td>
                       </tr>
                       <tr>
@@ -271,8 +293,8 @@
                         <td>AZPCity3</td>
                         <td>AZP3</td>
                         <td>
-                          <label class="badge badge-primary badge-pill">Zobacz</label>
-                          <label class="badge badge-danger badge-pill">Mapa</label>
+                          <label class="badge badge-main badge-pill">Zobacz</label>
+                          <label class="badge badge-map badge-pill">Mapa</label>
                         </td>
                       </tr>
                       <td class="font-weight-bold">4</td>
@@ -285,8 +307,8 @@
                       <td>AZPCity4</td>
                       <td>AZP4</td>
                       <td>
-                        <label class="badge badge-primary badge-pill">Zobacz</label>
-                        <label class="badge badge-danger badge-pill">Mapa</label>
+                        <label class="badge badge-main badge-pill">Zobacz</label>
+                        <label class="badge badge-map badge-pill">Mapa</label>
                       </td>
                       </tr>
                     </tbody>
@@ -294,11 +316,28 @@
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="pagination d-flex">
+                  <li class="paginate_button page-item previous disabled">
+                    <a href="#" aria-controls="order-listing" data-dt-idx="0" tabindex="8" class="page-link page-link-previous">Poprzedni</a>
+                  </li>
+                  <li class="paginate_button page-item active">
+                    <a href="#" aria-controls="order-listing" data-dt-idx="1" tabindex="9" class="page-link">1</a>
+                  </li>
+                  <li class="paginate_button page-item">
+                    <a href="#" aria-controls="order-listing" data-dt-idx="1" tabindex="10" class="page-link">2</a>
+                  </li>
+                  <li class="paginate_button">
+                    <a href="#" aria-controls="order-listing" data-dt-idx="2" tabindex="11" class="page-link page-link-next">Następny</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
 
     <!--build:js js/main.min.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
