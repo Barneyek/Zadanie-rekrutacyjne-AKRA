@@ -11,7 +11,7 @@ designu w taki sposób żeby wyglądał jak standardowa strona z Bootstrapa moż
 działające skrypty będą dodatkowym atutem ale nie są wymagane. Pamiętaj że czytelność kodu, oraz jego podział jest bardzo ważny.<br>
 <hr>
 Chcemy zobaczyć jak pracujesz, na początku swojej pracy z kodem zainicjuj repozytorium Git, twórz często commity opisujące wprowadzanie
-zmiany. Repozytorium opublikuj w serwisie Github a gotową stronę hostuj wykorzystując GitHub Pages. Pliki graficzne prześlij nam mailem.<br>
+zmiany. Repozytorium opublikuj w serwisie Github a gotową stronę hostuj wykorzystując GitHub Pages. Pliki graficzne prześlij nam mailem.<br><br>
 Zawartość strony:<br>
 <ol>
 <li>Logo platformy, ma nawiązywać do archeologii.</li>
